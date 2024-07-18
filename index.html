@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Listing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="navbar-left">
+                <div class="logo">
+                    <a href="index.html"><img src="image/logo (2).png" alt="Logo"></a>
+                </div>
+                <div class="company-name">
+                    <h1>Abin's Shop</h1>
+                </div>
+            </div>
+            <div class="navbar-right">
+                <ul>
+                    <li><a href="index.html" onclick="displaySection('home')">Home</a></li>
+                    <li><a href="#" onclick="displaySection('profile')">Profile</a></li>
+                    <li><a href="#" onclick="displaySection('cart')">Cart</a></li>
+                    <li><a href="#" onclick="displaySection('login')">Login</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="header-title">
+        <h1>Product Listing</h1>
+    </div>
+
+    <main class="container">
+        <div class="col-3">
+            <h2>Product Categories</h2>
+            <div id="category-filters"></div>
+        </div>
+        <div id="product-list" class="col-9"></div>
+    </main>
+    
+    <footer class="p-5">
+            
+        <!-- <hr /> -->
+        <div class="copy">
+            <p class="text-center mt-3">
+                Copyright © Abin's Shop. All Rights Reserved
+            </p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
